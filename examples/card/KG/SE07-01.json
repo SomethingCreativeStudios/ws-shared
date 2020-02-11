@@ -48,12 +48,29 @@ your hand. Shuffle your Library.
     from the Stage to the Waiting Room, you may pay cost. If so, search your
     Library for up to 1 'Princess Hitei, Togame's Rival', reveal it, and put it in
     your hand. Shuffle your Library.",
-    "othertext": {
+    "vartext": {
         "Constant": "ASSIST All your Characters in front of this gain +500 Power.",
         "Action": "[(1) Put the top card of your Library in your Clock] When this is placed
         from the Stage to the Waiting Room, you may pay cost. If so, search your
         Library for up to 1 'Princess Hitei, Togame's Rival', reveal it, and put it in
         your hand. Shuffle your Library."
-    }
+    },
+    "typetext":[
+        {
+            "type": "constant",
+            "effect":"ASSIST All your Characters in front of this gain +500 Power."
+        },
+        {
+            "type": "action",
+            "cost": {
+                "stock": "1",
+                "other": "Put the top card of your Library in your Clock"
+            },
+            "effect": "When this is placed from the Stage to the Waiting Room, you may pay cost. 
+            If so, search your Library for up to 1 'Princess Hitei, Togame's Rival', reveal it, 
+            and put it in your hand. Shuffle your Library."
+        }
+    ]
+    
     
 }
