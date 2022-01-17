@@ -4,28 +4,29 @@ export interface WSCard {
         jp: string;
     };
     color: string;
-    rarity: string;
-    cardNo: string;
-    set: string;
-    side: string;
+    rarity?: string;
+    cardNo?: string;
+    set?: string;
+    imageUrl: string;
+    side?: string;
     type: string;
     level: number;
     cost: number;
     power: number;
     soul: number;
-    trait: {
+    trait?: {
         en: string[];
-        jp: string[];
+        jp?: string[];
     };
-    triggers: string;
-    flavor: string;
-    text: string;
-    vartext: {
+    triggers?: string[];
+    flavor?: string;
+    text?: string;
+    vartext?: {
         Constant: string;
         Action: string;
     };
-    typetext: TypeText[];
-    superDetailedText: DetailedText[];
+    typetext?: TypeText[];
+    superDetailedText?: DetailedText[];
 }
 export interface TypeText {
     type: string;
